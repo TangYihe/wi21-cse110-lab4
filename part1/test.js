@@ -32,4 +32,26 @@ console.log(discountPrices([100,200,300], .5));*/
 
 student.greeting();*/
 
-console.log(true === Boolean(2));
+/*function modifyArray(array, callback){
+    const newArr = [];//why const?
+    for (let i = 0; i < array.length; i++){
+        newArr.push(callback(array[i], function(x){
+            return x*2;
+        }));
+    }
+    return newArr;
+}
+
+function doSomething(num, callback){
+    return callback(num+2);
+}
+
+console.log(modifyArray([1,2,3], doSomething));*/
+
+function printNums() {
+    console.log(1);
+    setTimeout(function() {console.log(2);}, 1000);
+    setTimeout(function() {console.log(3);}, 0);
+    console.log(4);
+}
+printNums();

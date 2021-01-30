@@ -17,11 +17,24 @@
     D. student['Favorite teacher'].name  
     E. student.courseload[0]  
 14. 
-    A.   
+    A. 32. Concatenates 2 as a string to '3'.  
+    B. 1. Interpret '3' as a number for mathematical operation.  
+    C. 3. null becomes 0 when converted into number.
+    D. 3null. null is converted to 'null' as string and performed string concatenation.  
+    E. 4. true becomes 1 when converted into number.  
+    F. 0. false and null both become 0 when converted into number.  
+    G. 3undefined. undefined is converted to 'undefined' as string and performed string concatenation.  
+    H. NaN. Can't perform subtraction between strings.  
 15. 
     A. true. since '2' becomes number 2 when compared with 1.  
     B. false. strings are compared letter by letter. '2' is greater than '1', the first letter of '12'.  
     C. true. with non-strict check ==, '2' is compared as number 2.  
     D. false. with strict equality check ===, '2' is viewed as a string, and is thus not the same as a number.  
-    E. false. true is conversed to 1 as a number, not equal to 2.  
+    E. false. true is converted to 1 as a number, not equal to 2.  
     F. true. 2 is a non-zero number, so would have boolean value true.  
+16. "==" performs weak equality check which would convert the two variables to the same type and then compare if their values are equal. "===" performs strict equality check so that two variables are considered equal here if they have the same type and the same value.  
+17. How are you got printed. Because in the if conditional, true is converted to 1 and got compared with 2, so they are not equal. In the else if conditional, 2 is converted into boolean true, so the else-if block got executed.  
+18. js file
+19. the function returns [6,8,10]. First the code enters the for-loop in line 3 and iterate through each the input array. Take i=0 as an example. The code enters line 4, since the callback function here is doSomething as by input parameter, the function calls doSomething with num = array[0] = 1, callback is the new function that is defined on line 4-5. Then in the doSomething function, it calls the function defined on line 4-5 with parameter 1+2=3, and that function returns 6, so doSomething returns 6. Then 6 is pushed to the newArr and we continue with the same procedure on the rest array element. So we got [(1+2)\*2, (2+2)\*2, (3+2)\*2], which is [6,8,10].
+20. js file
+21. 1 4 3 2, where 2 is printed 1 second after the previous three. 
